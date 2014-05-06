@@ -1,7 +1,46 @@
+body {
+    background-image: url(background5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #background-img {
     position: fixed;
     height: auto;
     width: 100%;
     top: 0px;
     left: 0px;
+}
+
+ul.navigation-bar {
+    list-style-type: none;
+    background-color: #b4b4b4;
+    display: block;
+    opacity: 0.5;
+}
+
+li.navigation-item {
+    display: inline-block;
+    padding: 20px;
+    margin: 0;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #5c3320;
+}
+
+li.navigation-item:hover {
+    background-color: #FFFFFF;
+}
+
+li.navigation-icon {
+    display: inline-block;
+    background-image: url(me.jpg);
+    background-size: cover;
+    background-position: center;
+    float: right;
+    margin: 8px;
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
 }

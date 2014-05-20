@@ -2,6 +2,7 @@ body {
     background-image: url(background5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: black;
 }
 
 #background-img {
@@ -12,35 +13,67 @@ body {
     left: 0px;
 }
 
-ul.navigation-bar {
+#navigation-bar {
     list-style-type: none;
     background-color: #b4b4b4;
-    display: block;
-    opacity: 0.5;
+    display: inline-block;
+    opacity: 0.6;   
+    padding-right: 40px;
+    margin-top: 20px;
+    
 }
 
-li.navigation-item {
+#navigation-bar>li {
     display: inline-block;
     padding: 20px;
-    margin: 0;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
     font-size: 30px;
     color: #5c3320;
 }
 
-li.navigation-item:hover {
-    background-color: #FFFFFF;
+#navigation-bar>li:hover {
+    background-color: #ffffff;
+    opacity: 1;
+    box-shadow: 0 0px 80px 20px #ffffff;
 }
 
-li.navigation-icon {
-    display: inline-block;
+#navigation-icon {
     background-image: url(me.jpg);
     background-size: cover;
     background-position: center;
     float: right;
-    margin: 8px;
-    height: 60px;
-    width: 60px;
-    border-radius: 60px;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    border: 1px solid #b4b4b4;
+}
+
+#navigation-icon:hover {
+    box-shadow: 0 0px 80px 20px #ffffff;
+}
+
+.led-external-shadow {
+    box-shadow: 0px 0px 100px #ffffff;
+}
+
+blockquote {
+    font-family: 'Philosopher', sans-serif;
+    color: #ffffff;
+    width: auto;
+}
+
+#quote {
+    font-size: 60px;
+    position: relative;
+    width: 700px;
+    top: 150px;
+    left: 120px;
+}
+
+#about-me-panel {
+    border: 2px solid #b4b4b4;
+    width: auto;
+    display: none;
 }

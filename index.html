@@ -4,23 +4,30 @@
         <link rel="stylesheet" type="text/css" href="styles.css" />
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
         <link href='http://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
-        <script src="scripts.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//blurjs.com/blur.min.js"></script>
+        <script src="/scripts.js"></script>
+        
     </head>
     <body>
-        <div id="navigation-icon" class="led-external-shadow"></div>
-        <ul id="navigation-bar" class="led-external-shadow led-internal-shadow">
-            <li>Home</li>
-            <li>Thoughts</li>
-            <li>Works</li>
-            <li>Likes</li>
-            <li>About</li>
-        </ul>
-        <blockquote id="quote">"Only if you are willing to pay something others don't, you can reach somewhere others can't." - Me</blockquote>
-        <div id="about-me-panel">
-            <img src="me.jpg" alt="My picture" />
-            <h3>Heng Du</h3>
-            <h4>Engineer</h4>
-            <p>Something about me goes here...</p>
+        <div>
+            <div id="full-page-overlay" class="aero-glass"></div>
+            <div id="about-me"><img src="me.jpg" alt="My picture" class="about-me-icon led-external-shadow"/></div>
+            <ul id="navigation-bar" class="led-external-shadow led-internal-shadow">
+                <li>Home</li>
+                <li>Thoughts</li>
+                <li>Works</li>
+                <li>Likes</li>
+                <li>About</li>
+            </ul>
+            <blockquote id="quote">"Only if you are willing to pay something others don't, you can reach somewhere others can't." - Me</blockquote>
+            <div id="about-me-panel" class="led-external-shadow">
+                <img src="me.jpg" alt="My picture" class="about-me-icon led-external-shadow"/>
+                <h3>Heng Du</h3>
+                <h4>Engineer</h4>
+                <p>Something about me goes here...</p>
+            </div>
+            <div class="black-block"></div>
         </div>
     </body>
 </html>

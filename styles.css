@@ -1,16 +1,8 @@
 body {
-    background-image: url(background5.jpg);
+    background-image: url('background5.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: black;
-}
-
-#background-img {
-    position: fixed;
-    height: auto;
-    width: 100%;
-    top: 0px;
-    left: 0px;
+    background-position: center top;
 }
 
 #navigation-bar {
@@ -20,7 +12,6 @@ body {
     opacity: 0.6;   
     padding-right: 40px;
     margin-top: 20px;
-    
 }
 
 #navigation-bar>li {
@@ -38,7 +29,15 @@ body {
     box-shadow: 0 0px 80px 20px #ffffff;
 }
 
-#navigation-icon {
+#about-me:hover {
+    cursor: pointer;
+}
+
+#about-me > img:hover {
+        box-shadow: 0 0px 80px 20px #ffffff;
+}
+
+.about-me-icon {
     background-image: url(me.jpg);
     background-size: cover;
     background-position: center;
@@ -70,10 +69,50 @@ blockquote {
     width: 700px;
     top: 150px;
     left: 120px;
+    padding: 20px;
 }
 
 #about-me-panel {
     border: 2px solid #b4b4b4;
-    width: auto;
+    width: 500px;
+    text-align: center;
+    background-color: #eeeeee;
+    opacity: 0.95;
+    border-radius: 10px;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    right: 50%;
+    margin-left: -250px;
+    display: none;
+    z-index: 20;
+}
+
+#about-me-panel > .about-me-icon {
+    float: none;
+}
+
+.aero-glass {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.black-block {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)),to(rgba(0,0,0,1)));
+    height: 400px;
+}
+
+#full-page-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: black;
+    opacity: 0.5;
     display: none;
 }
